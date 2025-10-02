@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rozcestník</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="uvodASearch.css">
+    <link rel="stylesheet" href="timeline.css">
 </head>
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     
     <div class="uvod">
-        <h1>2. světová válka 3.IT</h1>
-        <input type="text" placeholder="Hledat projekt..." id="searchInput" class="search">
-        <div id="suggestions" class="suggestions"></div>
+        <h1>2. světová válka</h1>
+        <span>3.IT</span>
+        <form class="search-bar" autocomplete="off" onsubmit="return false;">
+            <input type="text" id="searchInput" name="search_input_xyz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Hledej projekt..."/>
+            <div id="suggestions" class="suggestions" aria-hidden="true"></div>
+        </form>
     </div>
 
     <div class="timeline">
@@ -139,9 +143,10 @@
         </div>
 
     </div>
+
     <script src="searchScroll.js"></script>
-    
     <script src="search.js"></script>
-    <script src="script.js"></script>
+    <script src="pohybBoxu.js"></script>
+
 </body>
 </html>

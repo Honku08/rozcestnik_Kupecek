@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+
+/* ÚVOD */
+.uvod{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.uvod h1{
+  font-size: 4rem;
+}
+
+
+/* SEARCH */
+.search-bar{ 
+    position: relative;
+    width: 320px;
+    max-width: 90%;
+    margin: 20px auto; 
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #e7e7e7;
+  color: #000000;
+  font-size: 1rem;
+  outline: none;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #151515;
+  border: 1px solid #333;
+  max-height: 250px;
+  overflow-y: auto;
+  display: none;
+  z-index: 99999; /* hodně vysoko, aby překryl jiné prvky */
+  box-shadow: 0 6px 24px rgba(0,0,0,0.6);
+  border-radius: 8px;
+}
+
+.suggestion-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.suggestion-item:hover,
+.suggestion-item.active {
+  background: #2b2b2b;
+}
+
+.no-results {
+  padding: 10px 12px;
+  color: #bbb;
+}

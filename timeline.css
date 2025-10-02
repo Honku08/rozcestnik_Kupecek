@@ -1,0 +1,35 @@
+.timeline {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px 0;
+  width: 80%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: white; /* nebo nějaká barva */
+  transform: translateX(-50%);
+}
+
+.timeline-box {
+  width: 45%;
+  padding: 20px;
+  background: #222;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+  margin: 40px 0;
+}
+
+.timeline-box.left {
+  left: 0;
+}
+
+.timeline-box.right {
+  left: 55%;
+}

@@ -9,8 +9,8 @@ gsap.utils.toArray(".timeline-box").forEach((box, i) => {
     duration: 0.3,
     scrollTrigger: {
       trigger: box,
-      start: "top 80%",
-      end: "bottom 20%",
+      start: "top 85%",
+      end: "bottom 15%",
       toggleActions: "restart reverse restart reverse", 
     }
   });
